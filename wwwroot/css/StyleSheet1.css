@@ -1,0 +1,79 @@
+﻿@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #printSection, #printSection * {
+        visibility: visible;
+    }
+
+    #printSection {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    .print-page {
+        page-break-before: always;
+        break-before: page;
+    }
+
+        .print-page:first-child {
+            page-break-before: auto;
+            break-before: auto;
+        }
+
+    #printSection img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+/*@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    body * {
+        visibility: hidden;
+    }
+
+    #printSection, #printSection * {
+        visibility: visible;
+    }
+
+    #printSection {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    .print-page {
+        page-break-before: always;
+        break-before: page;
+        margin-top: 120px;  ✅ لترك مساحة للصورة 
+    }
+
+        .print-page:first-child {
+            page-break-before: auto;
+            break-before: auto;
+        }
+
+    .print-header {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+        .print-header img {
+            width: 100%;
+            height: auto;
+        }
+}*/
